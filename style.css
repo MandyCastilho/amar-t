@@ -11,6 +11,30 @@
   --texto-escuro: #f5f5f5;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--claro);
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--cor2);
+    border-radius: 10px;
+    border: 2px solid var(--claro);
+  }
+  
+  body.dark::-webkit-scrollbar-track {
+    background: var(--escuro);
+  }
+  
+  body.dark::-webkit-scrollbar-thumb {
+    background-color: var(--cor3);
+    border: 2px solid var(--escuro);
+  }
+  
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: var(--claro);
