@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio Amar't - Especialistas em beleza: cílios, sobrancelhas, cabelo e unhas. Agende seu horário online com profissionais de confiança.">
+    <meta name="keywords" content="Studio Amar't, beleza, estética, cílios, sobrancelhas, cabelo, unhas, estética facial, cuidados pessoais, beleza feminina, agendamento online">
+    <meta name="author" content="Amanda Ramos Castilho">
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Amar't</title>
+</head>
+
+<body>
+
+  <div id="preloader"></div>
+
+  <header>
+
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo Amar’t" />
+      <div class="logo-text">
+        <h1>Amar’t</h1>
+        <p>Sua beleza, nossa arte.</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#cilios">Cílios</a></li>
+        <li><a href="#sobrancelha">Sobrancelha</a></li>
+        <li><a href="#cabelo">Cabelo</a></li>
+        <li><a href="#unhas">Unhas</a></li>
+        <li id="ag"><a href="#contato">Agende</a></li>
+      </ul>
+    </nav>
+
+    <button id="toggle-theme">🌓</button>
+  </header>
+
+  <section id="hero" data-aos="fade-up">
+    <h2>Realce sua beleza natural</h2>
+    <p>Transformações que você merece, com quem entende de estética.</p>
+  </section>
+
+  <div class="carousel-container" data-aos="zoom-in">
+    <div class="carousel">
+      <img src="https://via.placeholder.com/300x200?text=C%C3%ADlios" alt="Cílios">
+      <img src="https://via.placeholder.com/300x200?text=Sobrancelha" alt="Sobrancelha">
+      <img src="https://via.placeholder.com/300x200?text=Cabelo" alt="Cabelo">
+      <img src="https://via.placeholder.com/300x200?text=Unhas" alt="Unhas">
+    </div>
+  </div>
+
+  <main>
+
+    <section id="cilios" class="servico" data-aos="fade-right">
+      <h3>Extensão de Cílios</h3>
+      <p>Volume clássico, híbrido e mega volume. Seu olhar mais marcante.</p>
+    </section>
+
+    <section id="sobrancelha" class="servico" data-aos="fade-left">
+      <h3>Design de Sobrancelhas</h3>
+      <p>Design, henna e micropigmentação. Harmonia para o seu rosto.</p>
+    </section>
+
+    <section id="cabelo" class="servico" data-aos="fade-right">
+      <h3>Tratamentos Capilares</h3>
+      <p>Cortes, coloração, hidratação e reconstrução. Seu cabelo com vida.</p>
+    </section>
+
+    <section id="unhas" class="servico" data-aos="fade-left">
+      <h3>Unhas</h3>
+      <p>Esmaltação, gel, fibra e cuidado completo para mãos e pés.</p>
+    </section>
+
+  </main>
+
+  <section id="contato" data-aos="fade-up">
+    <h3>Agende seu horário</h3>
+
+    <form id="form-agendamento">
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <input type="tel" id="telefone" placeholder="Telefone para contato" required />
+
+      <select id="servico" required>
+        <option value="">Selecione o serviço</option>
+        <option value="cilios">Cílios</option>
+        <option value="sobrancelha">Sobrancelha</option>
+        <option value="cabelo">Cabelo</option>
+        <option value="unhas">Unhas</option>
+      </select>
+
+      <button type="submit" id="btn-enviar">Enviar</button>
+      <p id="mensagem" style="display: none; color: green; font-weight: bold;">Agendamento enviado com sucesso!</p>
+    </form>
+
+    <div id="ultimo-agendamento" style="margin-top: 20px; color: #444;"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Studio Glamour - Todos os direitos reservados.</p>
+    <a href="https://wa.me/5511985026264" target="_blank" class="whatsapp-button">
+      Agendar pelo WhatsApp
+    </a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>
