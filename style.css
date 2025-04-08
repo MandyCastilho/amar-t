@@ -167,18 +167,31 @@ header nav a:hover {
   justify-content: center;
   background-color: var(--claro);
   padding: 20px 0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .carousel {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  padding: 0 10px;
 }
 
 .carousel img {
   width: 360px;
   height: 320px;
-  border-radius: 12px;
+  border-radius: 16px;
   object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  scroll-snap-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
 }
 
 main {
