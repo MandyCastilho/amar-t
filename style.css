@@ -175,8 +175,8 @@ header nav a:hover {
 }
 
 .carousel img {
-  width: 300px;
-  height: 200px;
+  width: 360px;
+  height: 320px;
   border-radius: 12px;
   object-fit: cover;
 }
