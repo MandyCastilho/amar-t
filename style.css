@@ -85,6 +85,12 @@ header nav a:focus-visible {
   color: var(--cor4);
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 #toggle-theme {
   position: absolute;
   right: 20px;
@@ -231,7 +237,7 @@ body.dark .logo-text p {
 
 body.dark h3 {
   color: #004c4c; 
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+  text-shadow: 2px px 2px rgba(0, 0, 0, 0.4); 
 }
 
 body.dark h3 + p {
@@ -331,9 +337,13 @@ footer {
     gap: 10px;
   }
 
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .carousel img {
-    width: 90vw;
-    height: auto;
+    max-width: 90%;
   }
 
   #hero {
@@ -355,6 +365,18 @@ footer {
     right: 10px;
     padding: 6px;
   }
+
+  .carousel img {
+    max-width: 80%;
+  }
+
+  .logo-text h1 {
+    font-size: 1.6rem;
+  }
+
+  main, #contato {
+    padding: 20px 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -370,6 +392,15 @@ footer {
     padding: 15px;
   }
 
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel img {
+    max-width: 90%;
+  }
+
   #form-agendamento input,
   #form-agendamento select,
   #form-agendamento button {
@@ -381,3 +412,9 @@ footer {
     font-size: 0.9rem;
   }
 }
+
+
+
+  
+
+
