@@ -225,6 +225,8 @@ main {
   box-shadow: 0 0 10px var(--sombra);
 }
 
+/* Dark */
+
 body.dark header {
   background: linear-gradient(90deg, #0f4c4c, #006d6d);
 }
