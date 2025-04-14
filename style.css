@@ -314,11 +314,11 @@ body.dark #hero {
 
 body.dark h3 {
   color: var(--claro);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 body.dark h3 + p {
-  color: #e0f7f7;
+  color: rgb(245, 245, 245);
 }
 
 body.dark .carousel-container {
