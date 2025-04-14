@@ -28,15 +28,6 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid var(--claro);
 }
 
-body.dark::-webkit-scrollbar-track {
-  background: var(--escuro);
-}
-
-body.dark::-webkit-scrollbar-thumb {
-  background-color: var(--cor3);
-  border: 2px solid var(--escuro);
-}
-
 /* Estilo base */
 body {
   font-family: 'Segoe UI', sans-serif;
@@ -46,16 +37,10 @@ body {
   scroll-behavior: smooth;
 }
 
-body.dark {
-  background: linear-gradient(to bottom, #1e1e1e, #121212);
-  color: var(--texto-escuro);
-}
-
 #ag {
   text-decoration: overline;
 }
 
-/* Header e tema */
 header {
   background: linear-gradient(90deg, var(--cor1), var(--cor2));
   padding: 20px;
@@ -168,7 +153,6 @@ header nav a:focus-visible {
   100% { opacity: 1; }
 }
 
-/* Hero */
 #hero {
   text-align: center;
   padding: 60px 20px;
@@ -224,34 +208,6 @@ main {
   border-left: 6px solid var(--cor1);
   box-shadow: 0 0 10px var(--sombra);
 }
-
-/* Dark */
-
-body.dark header {
-  background: linear-gradient(90deg, #0f4c4c, #006d6d);
-}
-
-body.dark .logo-text h1 {
-  color: var(--cor4);
-}
-
-body.dark .logo-text p {
-  color: #b2fefa;
-}
-
-body.dark h3 {
-  color: #004c4c; 
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4); 
-}
-
-body.dark h3 + p {
-  color: #00adac;
-}
-
-body.dark footer {
-  background-color: #004c4c;
-}
-
 
 /* Formulário */
 #contato {
@@ -321,6 +277,189 @@ footer {
   background-color: #1da851;
 }
 
+/* Dark */
+
+body.dark::-webkit-scrollbar-track {
+  background: var(--escuro);
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  background-color: var(--cor3);
+  border: 2px solid var(--escuro);
+  border-radius: 8px;
+}
+
+body.dark {
+  background-color: var(--escuro);
+  color: var(--texto-escuro);
+  transition: var(--transicao-padrao);
+}
+
+body.dark header {
+  background: linear-gradient(90deg, var(--cor1), var(--cor2));
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+body.dark .logo-text h1 {
+  color: var(--cor4);
+}
+
+body.dark .logo-text p {
+  color: var(--cor3);
+}
+
+body.dark #hero {
+  background-color: #003838;
+}
+
+body.dark h3 {
+  color: var(--claro);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+body.dark h3 + p {
+  color: #e0f7f7;
+}
+
+body.dark .carousel-container {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+body.dark button {
+  background: linear-gradient(135deg, var(--cor2), var(--cor3));
+  color: var(--escuro);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 173, 172, 0.3);
+  transition: var(--transicao-padrao);
+}
+
+body.dark button:hover {
+  background: linear-gradient(135deg, var(--cor3), var(--cor4));
+  box-shadow: 0 6px 16px rgba(0, 173, 172, 0.5);
+  transform: translateY(-2px);
+}
+
+body.dark button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 173, 172, 0.3);
+}
+
+body.dark .servico {
+  background-color: rgba(27, 192, 191, 0.1); /* var(--cor2) com transparência */
+  border: 1px solid rgba(107, 249, 247, 0.2); /* var(--cor4) com transparência */
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+body.dark input,
+body.dark select {
+  background-color: #2e2e2e;
+  color: var(--texto-escuro);
+  border: 1px solid var(--cor2);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 1rem;
+  transition: var(--transicao-padrao);
+}
+
+body.dark input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+body.dark select option {
+  background-color: var(--escuro);
+  color: var(--texto-escuro);
+}
+
+body.dark input:focus,
+body.dark select:focus {
+  border-color: var(--cor3);
+  box-shadow: 0 0 8px rgba(107, 249, 247, 0.3);
+  outline: none;
+}
+
+body.dark label {
+  color: var(--cor4);
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+body.dark #contato {
+  background-color: rgba(0, 173, 172, 0.05); /* var(--cor1) com transparência */
+  padding: 20px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+body.dark #form-agendamento {
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 20px;
+  padding-right: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,173,172,0.15);
+  transition: var(--transicao-padrao);
+}
+
+body.dark #btn-enviar {
+  background: linear-gradient(135deg, var(--cor2), var(--cor4));
+  color: var(--escuro);
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: var(--transicao-padrao);
+  box-shadow: 0 4px 10px rgba(27, 192, 191, 0.2);
+}
+
+body.dark #btn-enviar:hover {
+  background: linear-gradient(135deg, var(--cor3), var(--cor4));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(80, 230, 228, 0.4);
+}
+
+/* MENSAGEM DE CONFIRMAÇÃO */
+body.dark #mensagem {
+  color: var(--cor4);
+}
+
+/* ÚLTIMO AGENDAMENTO */
+body.dark #ultimo-agendamento {
+  color: var(--cor3);
+}
+
+body.dark .whatsapp-button {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--cor1);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transicao-padrao);
+  box-shadow: 0 3px 8px rgba(0,173,172,0.3);
+}
+
+body.dark .whatsapp-button:hover {
+  background: var(--cor2);
+  box-shadow: 0 5px 12px rgba(0,173,172,0.5);
+}
+
+body.dark footer {
+  background-color: #142222;
+  color: var(--cor3);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
 
 /* RESPONSIVIDADE GERAL */
 
@@ -401,6 +540,7 @@ footer {
     height: 320px;
   }
 }
+
 
 
 
