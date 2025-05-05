@@ -189,13 +189,6 @@ header nav a:focus-visible {
   filter: brightness(1.1);
 }
 
-
-.carousel img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
-  filter: brightness(1.1);
-}
-
 /* Serviços */
 main {
   padding: 40px 20px;
@@ -246,12 +239,6 @@ main {
   background-color: var(--cor1);
 }
 
-#resposta-agendamento {
-  margin-top: 15px;
-  font-weight: bold;
-  color: green;
-}
-
 /* Footer */
 footer {
   background-color: var(--cor2);
@@ -275,28 +262,6 @@ footer {
 .whatsapp-button:hover,
 .whatsapp-button:focus-visible {
   background-color: #1da851;
-}
-
-#btn-topo {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: var(--cor2);
-  color: white;
-  border: none;
-  padding: 12px 15px;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-  z-index: 999;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-#btn-topo:hover {
-  background-color: var(--cor1);
-  transform: scale(1.1);
 }
 
 /* Dark */
