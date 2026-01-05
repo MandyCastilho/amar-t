@@ -90,7 +90,7 @@ O site foi planejado para unir **estética moderna**, **boa experiência do usu�
 ## 👩‍💻 Autora
 
 **Amanda Ramos Castilho**  
-🎓 Estudante de Análise e Desenvolvimento de Sistemas  
+🎓 Formada em Análise e Desenvolvimento de Sistemas  
 💻 Desenvolvedora Front-End em formação  
 
 📌 Projeto desenvolvido para fins acadêmicos e portfólio.
