@@ -91,7 +91,7 @@ O site foi planejado para unir **estética moderna**, **boa experiência do usu�
 
 **Amanda Ramos Castilho**  
 🎓 Formada em Análise e Desenvolvimento de Sistemas  
-💻 Desenvolvedora Front-End em formação  
+💻 Desenvolvedora Front-End   
 
 📌 Projeto desenvolvido para fins acadêmicos e portfólio.
 
